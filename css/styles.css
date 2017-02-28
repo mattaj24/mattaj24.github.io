@@ -8,3 +8,11 @@ body{
     font-size: 200px;
     text-align: center;
 }
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    text-decoration: none;
+}
