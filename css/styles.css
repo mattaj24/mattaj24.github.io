@@ -3,7 +3,7 @@ body{
     margin: 0px;
 }
 
-/*fix background image*/
+/*FIX: background image*/
 .headercontainer{
     display: flex;
     max-height: 900px;
@@ -14,6 +14,7 @@ body{
     background-repeat: no-repeat;
 }
 
+/*Navigation Circle with Name */
 .navcircle{
     display: flex;
     justify-content: center;
