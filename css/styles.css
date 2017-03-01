@@ -1,0 +1,27 @@
+body{
+    background-color: rgb(45, 45, 45);
+    margin: 0px;
+}
+
+/*fix background image*/
+.headercontainer{
+    display: flex;
+    max-height: 900px;
+    height: 900px;
+    background-image: url(../images/header.JPG);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navcircle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:75px;
+    margin-top: 75px;
+    background-color: white;
+    width: 350px;
+    height: 350px;
+    border-radius: 100%;
+}
