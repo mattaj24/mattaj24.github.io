@@ -3,15 +3,24 @@ body{
     margin: 0px;
 }
 
-/*FIX: background image*/
+/*Background Image*/
 .headercontainer{
     display: flex;
-    max-height: 900px;
-    height: 900px;
+    height: 80vh;
+    min-height: 850px;
     background-image: url(../images/header.JPG);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+/*FIX: Stupid Media Query for Background Image*/
+@media only screen and (max-width: 800px) {
+    .headercontainer{
+        display: flex;
+        height: 400px;
+    }
+
 }
 
 /*Navigation Circle with Name */
