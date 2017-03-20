@@ -3,6 +3,11 @@ body {
     margin: 0px;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
+
 /*Background Image*/
 .headercontainer {
     display: flex;
