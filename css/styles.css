@@ -28,6 +28,18 @@ body {
     border-radius: 100%;
 }
 
+/*Nav List*/
+.navlist {
+    display: flex;
+    list-style-type: none;
+    color: white;
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+.navitem {
+
+}
+
 /*Smaller Screens for Smaller People*/
 @media only screen and (max-width: 800px) {
     .headercontainer {
