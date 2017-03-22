@@ -3,9 +3,9 @@ body {
     margin: 0px;
 }
 
+/*All Links*/
 a{
-    text-decoration: none;
-    color: white;
+
 }
 
 /*Background Image*/
@@ -35,8 +35,6 @@ a{
        display: flex;
        justify-content: center;
        align-items: center;
-       margin-left: 75px;
-       margin-top: 75px;
        background-color: white;
        width: 350px;
        height: 350px;
@@ -56,29 +54,65 @@ a{
         padding: 0px;
     }
 
+    /*Nav Dividers*/
+    .navdivider {
+        display: flex;
+    }
+
     /*Nav Items*/
-    .navitem {
+    .navitem{
         display: flex;
         padding: 0px 5px;
     }
 
-    /*Nav Dividers*/
-    .navdivider {
-        display: flex;
-
+    /*Nav Links*/
+    .navlink{
+        background-color: rgba(40, 40, 40, 0.5);
+        padding: 5px;
+        border-radius: 5px;
+        text-decoration: none;
+        color: white;
     }
+
+/*Name*/
+
+    /*Name Item*/
+.namecontainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nameline{
+    display: flex;
+    height: 10px;
+    width: 35%;
+    background-color: white;
+}
+
+#name{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: 'Roboto Slab', sans-seif;
+    font-weight: 100;
+    text-align: center;
+    margin: 15px 5px;
+}
+
+
 
 /*Media Querys*/
 
     /*Smaller Screens for Smaller People*/
     @media only screen and (max-width: 1250px) {
         .headercontainer {
-            display: flex;
             justify-content: center;
             height: 400px;
         }
 
         .navcontainer{
+            align-content: center;
             flex-direction: column;
         }
 
@@ -96,7 +130,7 @@ a{
             width: 225px;
         }
 
-        /*Reordering List Items*/
+        /*Reordering Nav List Items*/
             #portfolio_nav{
                 order: 1;
             }
@@ -120,7 +154,7 @@ a{
 
 /*Fixes Off-Centering at Small Screen Sizes*/
     @media only screen and (max-width: 500px) {
-        .navlist{
+        .navlist {
             justify-content: center;
         }
     }

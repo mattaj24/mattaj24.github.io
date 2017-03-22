@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Matthew Jones</title>
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
-</head>
-<body>
-  <div class="everything">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home | Matthew Jones</title>
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
+    </head>
+    <body>
+        <div class="everything">
 
-   <header class="headercontainer">
+           <header class="headercontainer">
 
-       <nav class="navcontainer">
+               <nav class="navcontainer">
+          <a href="index.html"><div class="navcircle">
+          <img class="sig" src="images/sig.svg" />
+           </div></a>
 
-          <div class="navcircle">
-           <img class="sig" src="images/sig.svg" />
-           </div>
+         <!--This is a box behind the nav when on a desktop to increase contast-->
+             <!--Currently in dev (needs css)-->
+          <div class="desktopnavbox"></div>
 
+          <!---Nav List-->
            <ul class="navlist">
                <li id="home_nav" class="navitem"><a class="navlink" href="index.html">Home</a></li>
                    <li id="navdiv1" class="navdivider"></li>
@@ -27,9 +31,19 @@
            </ul>
        </nav>
 
-   </header>
+            <!--Future Home of Photo Credit-->
+                 <!--<div>
+                  <p id="photocredtext"><a id="photocredlink" href="https://www.instagram.com/irith.a/" target="_blank">@irith.a</a></p>
+                </div>-->
 
-    </div>
+           </header>
 
-</body>
+        <div class="namecontainer">
+           <div class="nameline"></div>
+            <h1 id="name">Matthew Jones</h1>
+            <div class="nameline"></div>
+        </div>
+
+        </div>
+    </body>
 </html>
