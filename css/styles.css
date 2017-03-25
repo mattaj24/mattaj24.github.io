@@ -10,6 +10,8 @@ body {
 /*Background Image*/
 .headercontainer {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     height: 80vh;
     min-height: 850px;
     max-width: 2750px;
@@ -98,6 +100,23 @@ body {
         margin: 15px 5px;
     }
 
+    /*Photo Cred*/
+#photocredtext{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 15px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+#photocredlink{
+    text-decoration: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+}
+
 /*About Container*/
 .about_container{
     display: flex;
@@ -146,7 +165,6 @@ body {
     /*Smaller Screens for Smaller People*/
     @media only screen and (max-width: 1250px) {
         .headercontainer {
-            justify-content: center;
             height: 400px;
         }
 
@@ -191,19 +209,28 @@ body {
             }
 
         /*About Section*/
-            .about_container{
-                justify-content: center;
-            }
-
-            #aboutbox{
-                margin-top: 10px;
-                min-width: 300px;
-            }
-    }
-
-/*Fixes Off-Centering at Small Screen Sizes*/
-    @media only screen and (max-width: 500px) {
-        .navlist {
+        .about_container{
             justify-content: center;
         }
+
+        #aboutbox{
+            min-width: 300px;
+         }
+    }
+
+/*Fixes margins when screen is smaller*/
+    @media only screen and (max-width: 900px) {
+
+        #aboutbox{
+            margin-top: 10px;
+            margin-left: 0px;
+         }
+
+    }
+
+    /*Fixes Off-Centering for Navigation at Small Screen Sizes*/
+        @media only screen and (max-width: 500px) {
+            .navlist {
+                justify-content: center;
+            }
     }
