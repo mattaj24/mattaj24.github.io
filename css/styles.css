@@ -101,32 +101,33 @@ body {
     }
 
     /*Photo Cred*/
-#photocredtext{
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 15px;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: 12px;
-}
+        #photocredtext{
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 15px;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            font-size: 12px;
+        }
 
-#photocredlink{
-    text-decoration: none;
-    color: inherit;
-    font-family: inherit;
-    font-size: inherit;
-}
+        #photocredlink{
+            text-decoration: none;
+            color: inherit;
+            font-family: inherit;
+            font-size: inherit;
+        }
 
 /*About Container*/
 .about_container{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-bottom: 15px;
 }
 
 
     /*Pic of Me*/
-        #me{
+        .me{
             display: flex;
             min-width: 300px;
             max-width: 500px;
@@ -135,7 +136,7 @@ body {
         }
 
     /*About Me Box*/
-        #aboutbox{
+        .aboutbox{
             display: flex;
             flex-direction: column;
             background-color: rgb(95, 95 ,95);
@@ -144,14 +145,14 @@ body {
             margin-left: 10px;
         }
 
-        #aboutme_body{
+        .aboutme_body{
             display: flex;
             font-family: 'Roboto', sans-serif;
             color: white;
             margin: 15px;
         }
 
-        #aboutme_header{
+        .aboutme_header{
             font-family: 'Roboto Slab', sans-serif;
             color: white;
             font-weight: 100;
@@ -213,7 +214,7 @@ body {
             justify-content: center;
         }
 
-        #aboutbox{
+        .aboutbox{
             min-width: 300px;
          }
     }
@@ -221,7 +222,7 @@ body {
 /*Fixes margins when screen is smaller*/
     @media only screen and (max-width: 900px) {
 
-        #aboutbox{
+        .aboutbox{
             margin-top: 10px;
             margin-left: 0px;
          }
