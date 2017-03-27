@@ -25,7 +25,7 @@ body {
 .navcontainer {
     display: flex;
     width: 100%;
-    height: 50%;
+    height: 60%;
     align-items: center;
     justify-content: space-around;
 }
@@ -165,8 +165,9 @@ body {
 
     /*Smaller Screens for Smaller People*/
     @media only screen and (max-width: 1250px) {
-        .headercontainer {
-            height: 400px;
+        .headercontainer{
+            min-height: 600px;
+            max-height: 600px;
         }
 
         .navcontainer{
@@ -230,8 +231,15 @@ body {
     }
 
     /*Fixes Off-Centering for Navigation at Small Screen Sizes*/
-        @media only screen and (max-width: 500px) {
+        @media only screen and (max-width: 600px) {
             .navlist {
                 justify-content: center;
             }
     }
+
+    /*Fixes Sizing for iPhone 5 Screens*/
+    @media only screen and (max-width: 400px) {
+        .navlink{
+            font-size: 20px;
+         }
+}
