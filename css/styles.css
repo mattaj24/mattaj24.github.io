@@ -19,6 +19,7 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+
 }
 
 /*Nav Container*/
@@ -160,6 +161,19 @@ body {
             margin: 15px;
         }
 
+/*Copyright Footer*/
+footer{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.copyright{
+    display: flex;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    color: rgba(150, 150, 150, 1);
+}
 
 /*Media Querys*/
 
