@@ -1,3 +1,4 @@
+/*CSS Used by All Pages*/
 /*Resume Coded by Matthew Jones*/
 
 /*Body Background and Margin Reset*/
@@ -5,7 +6,6 @@ body {
     background-color: rgb(45, 45, 45);
     margin: 0px;
 }
-
 
 /*Background Image*/
 .headercontainer {
@@ -75,23 +75,23 @@ body {
         color: white;
     }
 
-/*Name Container*/
-.namecontainer{
+/*Page Title Container*/
+.page_title_container{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-    /*Name Lines*/
-    .nameline{
+    /*Page Title Lines*/
+    .page_title_line{
         display: flex;
         height: 10px;
         width: 35%;
         background-color: white;
     }
 
-    /*Name Item*/
-    #name{
+    /*Page Title Item*/
+    .page_title{
         display: flex;
         justify-content: center;
         color: white;
@@ -118,62 +118,66 @@ body {
             font-size: inherit;
         }
 
-/*About Container*/
-.about_container{
+/*Section Containers*/
+.section_container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     margin-bottom: 15px;
 }
 
+    /*About Container*/
 
-    /*Pic of Me*/
-        .me{
-            display: flex;
-            min-width: 300px;
-            max-width: 500px;
-            width: 30%;
-            height: 100%;
-        }
+        /*Pic of Me*/
+            .me{
+                display: flex;
+                min-width: 300px;
+                max-width: 500px;
+                width: 30%;
+                height: 100%;
+            }
 
-    /*About Me Box*/
-        .aboutbox{
-            display: flex;
-            flex-direction: column;
-            background-color: rgb(95, 95 ,95);
-            width: 65%;
-            height: inherit;
-            margin-left: 10px;
-        }
+        /*About Me Box*/
+            .aboutbox{
+                display: flex;
+                flex-direction: column;
+                background-color: rgb(95, 95 ,95);
+                width: 65%;
+                height: inherit;
+                margin-left: 10px;
+            }
 
-        .aboutme_header{
-            font-family: 'Roboto Slab', sans-serif;
-            color: white;
-            font-weight: 100;
-            margin: 15px 15px 0px 15px;
-            line-height: 25px;
-        }
+            .aboutme_header{
+                font-family: 'Roboto Slab', sans-serif;
+                color: white;
+                font-weight: 100;
+                margin: 15px 15px 0px 15px;
+                line-height: 25px;
+            }
 
-        .aboutme_body{
-            display: flex;
-            font-family: 'Roboto', sans-serif;
-            color: white;
-            margin: 15px;
-        }
+            .aboutme_body{
+                display: flex;
+                font-family: 'Roboto', sans-serif;
+                color: white;
+                margin: 15px;
+            }
 
 /*Copyright Footer*/
-footer{
-    display: flex;
-    justify-content: center;
-    padding-bottom: 10px;
-}
 
-.copyright{
-    display: flex;
-    margin: 0px;
-    font-family: 'Roboto', sans-serif;
-    color: rgba(150, 150, 150, 1);
-}
+    /*Entire Footer*/
+    footer {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10px;
+    }
+
+    /*Copyright Text*/
+    .copyright {
+        display: flex;
+        margin: 0px;
+        font-family: 'Roboto', sans-serif;
+        color: rgba(150, 150, 150, 1);
+    }
 
 /*Media Querys*/
 
