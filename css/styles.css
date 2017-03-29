@@ -126,41 +126,55 @@ body {
     margin-bottom: 15px;
 }
 
-    /*About Container*/
+    /*General Formatting for Section Pictures*/
+    .section_picture{
+        display: flex;
+        min-width: 300px;
+        max-width: 500px;
+        width: 30%;
+        height: 100%;
+    }
 
-        /*Pic of Me*/
-            .me{
-                display: flex;
-                min-width: 300px;
-                max-width: 500px;
-                width: 30%;
-                height: 100%;
-            }
+    .section_box{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(95, 95 ,95);
+        width: 65%;
+        height: inherit;
+    }
 
-        /*About Me Box*/
-            .aboutbox{
-                display: flex;
-                flex-direction: column;
-                background-color: rgb(95, 95 ,95);
-                width: 65%;
-                height: inherit;
-                margin-left: 10px;
-            }
+    .section_header{
+        font-family: 'Roboto Slab', sans-serif;
+        color: white;
+        font-weight: 100;
+        margin: 15px 15px 0px 15px;
+        line-height: 25px;
+    }
 
-            .aboutme_header{
-                font-family: 'Roboto Slab', sans-serif;
-                color: white;
-                font-weight: 100;
-                margin: 15px 15px 0px 15px;
-                line-height: 25px;
-            }
+    .section_body{
+        display: flex;
+        font-family: 'Roboto', sans-serif;
+        color: white;
+        margin: 15px;
+    }
 
-            .aboutme_body{
-                display: flex;
-                font-family: 'Roboto', sans-serif;
-                color: white;
-                margin: 15px;
-            }
+        /*About Section*/
+        #about_box{
+            margin-left: 10px;
+        }
+
+        #about_picture{
+            order: 0;
+        }
+
+        /*Achievements Section*/
+        #achievements_box{
+            margin-right: 10px;
+        }
+
+        #achievements_picture{
+            order: 1;
+        }
 
 /*Copyright Footer*/
 
@@ -229,29 +243,43 @@ body {
             }
 
         /*About Section*/
-        .about_container{
+        .section_container{
             justify-content: center;
         }
 
-        .aboutbox{
+        .section_box{
             min-width: 300px;
          }
     }
 
-/*Fixes margins when screen is smaller*/
+/*When Flexboxs Collapse*/
     @media only screen and (max-width: 900px) {
 
-        .aboutbox{
+        /*Fixes top margin for section boxes*/
+        .section_box{
             margin-top: 10px;
-            margin-left: 0px;
          }
 
+        /*Fixes left margin for about box*/
+        #about_box{
+            margin-left: 0px;
+        }
+
+        /*Fixes right margin for achievment box*/
+        #achievements_box{
+            margin-right: 0px;
+        }
+
+        /*Fixes picture order for achievemnts*/
+        #achievements_picture{
+            order: 0;
+        }
     }
 
     /*Fixes Off-Centering for Navigation at Small Screen Sizes*/
-        @media only screen and (max-width: 600px) {
-            .navlist {
-                justify-content: center;
+    @media only screen and (max-width: 600px) {
+        .navlist {
+            justify-content: center;
             }
     }
 
