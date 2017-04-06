@@ -195,7 +195,7 @@ body {
 
 /*Media Querys*/
 
-    /*Smaller Screens for Smaller People*/
+    /*Mobile Screen Layout for Index*/
     @media only screen and (max-width: 1250px) {
         .headercontainer{
             min-height: 600px;
@@ -252,7 +252,7 @@ body {
          }
     }
 
-/*When Flexboxs Collapse*/
+    /*When Flexboxs Collapse on Index*/
     @media only screen and (max-width: 900px) {
 
         /*Fixes top margin for section boxes*/
@@ -283,7 +283,7 @@ body {
             }
     }
 
-    /*Fixes Sizing for iPhone 5 Screens*/
+    /*Fixes Navigation Sizing for iPhone 5 Screens*/
     @media only screen and (max-width: 400px) {
         .navlink{
             font-size: 20px;
