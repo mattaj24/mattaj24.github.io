@@ -123,6 +123,7 @@ body {
         margin: 15px 5px;
     }
 
+
 /*Copyright Footer*/
 
     /*Entire Footer*/
@@ -138,6 +139,34 @@ body {
         margin: 0px;
         font-family: 'Roboto', sans-serif;
         color: rgb(150, 150, 150);
+    }
+
+/*Contact Page*/
+    /*Main Div*/
+    .contact_main{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+        /*Contact Images Container*/
+        .contact_images_container{
+            display: flex;
+            width: 50%;
+            height: 40vh;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            background-color: rgb(100, 100, 100);
+        }
+
+            /*Images*/
+
+        /*Email*/
+    .contact_email_title{
+        font-family: 'Roboto Slab', sans-serif;
+        color: white;
+        font-weight: 100;
+
     }
 
 /*Media Querys*/
