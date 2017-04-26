@@ -36,10 +36,15 @@ body {
        display: flex;
        justify-content: center;
        align-items: center;
-       background-color: white;
+       background-color: rgba(255, 255, 255, 1);
        width: 215px;
        height: 215px;
        border-radius: 100%;
+       transition: background-color 0.5s;
+    }
+
+    .navcircle:hover{
+        background-color: rgba(240, 240, 240, 1);
     }
 
     /*Signature*/
@@ -78,6 +83,11 @@ body {
         border-radius: 5px;
         text-decoration: none;
         color: white;
+        transition: background-color 0.25s;
+    }
+
+    .navlink:hover{
+        background-color: rgba(40, 40, 40, 0.75);
     }
 
     /*Photo Cred*/
@@ -95,6 +105,11 @@ body {
             color: inherit;
             font-family: inherit;
             font-size: inherit;
+            transition: color 0.25s;
+        }
+
+        #photocredlink:hover{
+            color: rgba(200, 200, 200, 1);
         }
 
 /*Page Title Container*/
