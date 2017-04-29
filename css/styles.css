@@ -19,7 +19,6 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-
 }
 
 /*Nav Container*/
@@ -40,11 +39,17 @@ body {
        width: 350px;
        height: 350px;
        border-radius: 100%;
-       transition: background-color 0.5s;
+       transition: background-color 0.5s, width 1s, height 1s;
     }
 
     .navcircle:hover{
         background-color: rgba(240, 240, 240, 1);
+    }
+
+    /*Signature*/
+    .sig{
+        width: 100%;
+        transition: width 1s;
     }
 
     /*Nav List*/

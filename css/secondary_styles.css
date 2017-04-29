@@ -40,7 +40,7 @@ body {
        width: 215px;
        height: 215px;
        border-radius: 100%;
-       transition: background-color 0.5s;
+       transition: background-color 0.5s, width 1s, height 1s;
     }
 
     .navcircle:hover{
@@ -50,6 +50,7 @@ body {
     /*Signature*/
     .sig{
         width: 200px;
+        transition: width 1s;
     }
 
     /*Nav List*/
@@ -83,7 +84,8 @@ body {
         border-radius: 5px;
         text-decoration: none;
         color: white;
-        transition: background-color 0.25s;
+        font-size: auto;
+        transition: background-color 0.25s, font-size 1s;
     }
 
     .navlink:hover{
