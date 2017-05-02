@@ -7,6 +7,11 @@ body {
     margin: 0px;
 }
 
+/*Resets Margins for Headers*/
+h1, h2, h3, h4, h5, h6{
+    margin: 0px;
+}
+
 /*Background Image*/
 .headercontainer {
     display: flex;
@@ -159,32 +164,95 @@ body {
     }
 
 /*Contact Page*/
+
     /*Main Div*/
     .contact_main{
         display: flex;
         flex-wrap: wrap;
+        margin-bottom: 20px;
+        justify-content: space-around;
     }
 
-        /*Contact Images Container*/
-        .contact_images_container{
+        /*Social Links Container*/
+        .social_links_container{
             display: flex;
-            width: 50%;
-            height: 40vh;
+            width: 45%;
+            height: 550px;
+            min-width: 300px;
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
             background-color: rgb(100, 100, 100);
+            margin: 0px 15px;
         }
 
-            /*Images*/
+            /*Social Links (Coming Soon...)*/
 
-        /*Email*/
-    .contact_email_title{
-        font-family: 'Roboto Slab', sans-serif;
-        color: white;
-        font-weight: 100;
-
+    /*Contact Form Div*/
+    .contact_info_container{
+        width: 45%;
     }
+
+        /*Contact Form Title*/
+        .contact_message_title{
+            font-family: 'Roboto Slab', sans-serif;
+            color: white;
+            font-weight: 100;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        /*Contact Form Box Titles*/
+        .contact_form_box_titles{
+            font-family: 'Roboto Slab', sans-serif;
+            color: white;
+            font-weight: 100;
+            margin: 15px 0px 10px 0px;
+        }
+
+        /*Contact Form*/
+        #contact_form{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+        }
+
+            /*Contact Form Text Areas*/
+            .contact_form_textarea{
+                height: 30px;
+                width: 50%;
+                min-width: 300px;
+            }
+
+            /*Name Field*/
+            .contact_form_textarea#name_field{
+
+            }
+
+            /*Email Field*/
+            .contact_form_textarea#email_field{
+
+            }
+
+            /*Message Field*/
+            .contact_form_textarea#message_field{
+                height: 200px;
+                resize: both;
+                overflow: auto;
+            }
+
+            /*Submit Button*/
+            #contact_form_submit_button{
+                background-color: rgba(100, 100, 100, 1);
+                border-radius: 3px;
+                color: white;
+                height: 30px;
+                margin-top: 15px;
+                min-width: 100px;
+                width: 25%;
+                border: none;
+            }
 
 /*Media Querys*/
 
@@ -239,6 +307,10 @@ body {
             }
 
         .navlink{
+            background-color: rgba(0, 0, 0, 0);
+        }
+
+        .navlink:hover{
             background-color: rgba(0, 0, 0, 0);
         }
 

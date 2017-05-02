@@ -61,20 +61,24 @@
 
 <!--Main-->
    <main class="contact_main">
-        <!--Contact Me Images-->
-        <div class="contact_images_container">
-            <!--Uncomment Out When Ready!!-->
-            <!--
-             <img class="contact_image" id="contact_image_1" src="images/closeup_world_photoshop.jpg" alt="" />
-             <img class="contact_image" id="contact_image_2" src="" alt="" />
-             <img class="contact_image" id="contact_image_3" src="" alt="" />
-             -->
+        <!--Social Links Container-->
+        <div class="social_links_container">
+
         </div>
 
         <div class="contact_info_container">
-            <!--Email Me-->
-            <h1 class="contact_email_title">Email Me</h1>
-            <a></a>
+            <!--Message Me-->
+            <h1 class="contact_message_title">Message Me</h1>
+            <form id="contact_form">
+               <h3 class="contact_form_box_titles">Name:</h3>
+                <input class="contact_form_textarea" id="name_field" placeholder="Your Name" name="name" type="text" required />
+                <h3 class="contact_form_box_titles">Email:</h3>
+                <input class="contact_form_textarea" id="email_field" placeholder="Your Email" name="email" type="email" required />
+                <h3 class="contact_form_box_titles">Message:</h3>
+                <textarea form="contact_form" class="contact_form_textarea" id="message_field" type="text" placeholder="Your Message" name="message" required></textarea>
+                <input id="contact_form_submit_button" type="submit" value="Send">
+
+            </form>
         </div>
 
 
