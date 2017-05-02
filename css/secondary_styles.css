@@ -165,31 +165,33 @@ h1, h2, h3, h4, h5, h6{
 
 /*Contact Page*/
 
-    /*Main Div*/
+    /*Main Container*/
     .contact_main{
         display: flex;
         flex-wrap: wrap;
         margin-bottom: 20px;
         justify-content: space-around;
+        align-items: center;
     }
 
         /*Social Links Container*/
         .social_links_container{
             display: flex;
             width: 45%;
-            height: 550px;
+            height: 625px;
             min-width: 300px;
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
             background-color: rgb(100, 100, 100);
             margin: 0px 15px;
+            border-radius: 10px;
         }
 
             /*Social Links (Coming Soon...)*/
 
     /*Contact Form Div*/
-    .contact_info_container{
+    .contact_message_container{
         width: 45%;
     }
 
@@ -223,16 +225,7 @@ h1, h2, h3, h4, h5, h6{
                 height: 30px;
                 width: 50%;
                 min-width: 300px;
-            }
-
-            /*Name Field*/
-            .contact_form_textarea#name_field{
-
-            }
-
-            /*Email Field*/
-            .contact_form_textarea#email_field{
-
+                border-radius: 2px;
             }
 
             /*Message Field*/
@@ -240,6 +233,7 @@ h1, h2, h3, h4, h5, h6{
                 height: 200px;
                 resize: both;
                 overflow: auto;
+                padding: 10px;
             }
 
             /*Submit Button*/
