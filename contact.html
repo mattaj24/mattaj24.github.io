@@ -85,7 +85,7 @@
 
             </a>
 
-<script>if( isMobile.iOS() || isMobile.Android() ){
+<script>if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
     $('a#instagram_link').attr('href', 'instagram://user?username=mattaj24');
 }</script>
 
@@ -110,8 +110,7 @@
                 <p>Twitter: @mattaj24</p>
 
             </a>
-
-<script>if( isMobile.iOS() || isMobile.Android() ){
+<script>if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
     $('a#twitter_link').attr('href', 'twitter://user?screen_name=mattaj24');
 }</script>
 
