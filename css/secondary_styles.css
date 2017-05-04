@@ -338,6 +338,47 @@ h1, h2, h3, h4, h5, h6{
                     border: 1px inset grey;
                 }
 
+/*Portfolio Page*/
+
+/*Hides Grid Layout if Not Supported*/
+.portfolio_grid_container{
+    display: none;
+}
+
+/*Tests if Browser Supports Grid Layout*/
+@supports (display: grid){
+    /*Portfolio Grid Container*/
+    .portfolio_grid_container{
+        margin: 15px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-auto-rows: minmax(200px, auto);
+        grid-gap: 15px;
+        grid-auto-flow: dense;
+    }
+
+    /*Cells Span 2 Rows and 2 Columns*/
+    .span2{
+        grid-column-end: span 2;
+        grid-row-end: span 2;
+    }
+
+    /*Cells Span 2 Rows and 2 Columns*/
+    .span3{
+        grid-column-end: span 3;
+        grid-row-end: span 3;
+    }
+
+    /*Basic Cell Styling*/
+    .portfolio_grid_container div{
+        background-color: rgba(100, 100, 100, 1);
+        font-family: 'Roboto', sans-serif;
+        color: white;
+        padding: 5px;
+        border-radius: 3px;
+    }
+}
+
 /*Media Querys*/
 
     /*Mobile Screen Layout for Index*/
