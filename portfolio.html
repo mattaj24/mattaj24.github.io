@@ -29,6 +29,47 @@
   ga('create', 'UA-96343895-1', 'auto');
   ga('send', 'pageview');
             </script>
+
+        <!--Lightbox Script-->
+            <script>
+function openModal() {
+  document.getElementById('lightbox').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('lightbox').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("lb_slides");
+  var dots = document.getElementsByClassName("portfolio_image");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+            </script>
+
 </head>
 <body>
  <div class="everything">
@@ -64,39 +105,67 @@
         </div>
 
     <main>
+<div class="gallery_container">
+<div class="column">
+  <div class="row">
+    <img src="images/lq_portfolio/lq.ansel.jones.matthew.jpg" onclick="openModal();currentSlide(1)" class="gallery_image">
+  </div>
+  <div class="row">
+    <img src="images/lq_portfolio/lq.road.jones.matthew.jpg" onclick="openModal();currentSlide(2)" class="gallery_image">
+  </div>
+  <div class="row">
+    <img src="images/lq_portfolio/lq.stairs.jones.matthew.jpg" onclick="openModal();currentSlide(3)" class="gallery_image">
+  </div>
+  <div class="row">
+    <img src="images/lq_portfolio/lq.stream.jones.matthew.jpg" onclick="openModal();currentSlide(4)" class="gallery_image">
+  </div>
+  <div class="row">
+    <img src="images/lq_portfolio/lq.waterfall.jones.matthew.jpg" onclick="openModal();currentSlide(5)" class="gallery_image hover-shadow">
+  </div>
+</div>
 
-    <!--Tenplate Flexbox Image Gallery-->
-    <div class="flex_gallery_container">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+<div id="lightbox" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="lb_slides">
+      <div class="numbertext">1 / 5</div>
+        <img src="images/hq_portfolio/ansel.jones.matthew.jpg" style="width:100%">
     </div>
 
-    <!--Template Grid Image Gallery-->
-   <div class="portfolio_grid_container">
-       <div class="span3">1</div>
-       <div class="span2">2</div>
-       <div>3</div>
-       <div class="span2">4</div>
-       <div>5</div>
-       <div class="span3">6</div>
-       <div>7</div>
-       <div>8</div>
-       <div class="span2">9</div>
-       <div>10</div>
-       <div>11</div>
-       <div>12</div>
-   </div>
+    <div class="lb_slides">
+      <div class="numbertext">2 / 5</div>
+        <img src="images/hq_portfolio/road.jones.matthew.jpg" style="width:100%">
+    </div>
+
+    <div class="lb_slides">
+      <div class="numbertext">3 / 5</div>
+        <img src="images/hq_portfolio/stairs.jones.matthew.jpg" style="width:100%">
+    </div>
+
+    <div class="lb_slides">
+      <div class="numbertext">4 / 5</div>
+        <img src="images/hq_portfolio/stream.jones.matthew.jpg" style="width:100%">
+    </div>
+
+    <div class="lb_slides">
+      <div class="numbertext">5 / 5</div>
+        <img src="images/hq_portfolio/waterfall.jones.matthew.jpg" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption">Caption</p>
+    </div>
+
+  </div>
+</div>
+</div>
     </main>
+
+
 <!--Copyright Footer-->
 <footer>
     <p class="copyright">&copy; 2017 Matthew Jones</p>
