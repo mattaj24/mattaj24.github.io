@@ -172,10 +172,9 @@ body {
     }
 
     .section_body{
-        display: flex;
         font-family: 'Roboto', sans-serif;
         color: white;
-        margin: 15px;
+        margin: 15px 15px 0px 15px;
     }
 
         /*About Section*/
