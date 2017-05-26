@@ -30,7 +30,7 @@
   ga('send', 'pageview');
             </script>
 
-        <!--Lightbox Script-->
+        <!--Lightbox Script- Adapted from w3Schools Lightbox Tutorial-->
             <script>
 function openModal() {
   document.getElementById('lightbox').style.display = "block";
@@ -105,137 +105,223 @@ function showSlides(n) {
         </div>
 
     <main>
-<div class="gallery_container">
-<div class="column">
-  <div class="row">
-    <img src="images/lq_portfolio/lq.ansel.jones.matthew.jpg" onclick="openModal();currentSlide(1)" class="gallery_image" />
-  </div>
-  <div class="row">
-    <img src="images/lq_portfolio/lq.road.jones.matthew.jpg" onclick="openModal();currentSlide(2)" class="gallery_image" />
-  </div>
-  <div class="row">
-    <img src="images/lq_portfolio/lq.stairs.jones.matthew.jpg" onclick="openModal();currentSlide(3)" class="gallery_image" />
-  </div>
-  <div class="row">
-    <img src="images/lq_portfolio/lq.stream.jones.matthew.jpg" onclick="openModal();currentSlide(4)" class="gallery_image" />
-  </div>
-  <div class="row">
-    <img src="images/lq_portfolio/lq.waterfall.jones.matthew.jpg" onclick="openModal();currentSlide(5)" class="gallery_image" />
-  </div>
-  <div class="row">
-        <img src="images/lq_portfolio/lq.star.wars.jones.matthew.jpg" onclick="openModal();currentSlide(6)" class="gallery_image" alt="" />
+    <!--Gallery Container-->
+    <div class="gallery_container">
+
+        <!--Column 1-->
+        <div class="column">
+
+           <!--Ansel Picture-->
+            <div class="row">
+                <img src="images/lq_portfolio/lq.ansel.jones.matthew.jpg" onclick="openModal();currentSlide(1)" class="gallery_image" />
+            </div>
+
+            <!--Road Picture-->
+            <div class="row">
+                <img src="images/lq_portfolio/lq.road.jones.matthew.jpg" onclick="openModal();currentSlide(2)" class="gallery_image" />
+            </div>
+
+            <!--Stairs Picture-->
+            <div class="row">
+                <img src="images/lq_portfolio/lq.stairs.jones.matthew.jpg" onclick="openModal();currentSlide(3)" class="gallery_image" />
+            </div>
+
+            <!--Stream Picture-->
+            <div class="row">
+                <img src="images/lq_portfolio/lq.stream.jones.matthew.jpg" onclick="openModal();currentSlide(4)" class="gallery_image" />
+            </div>
+
+            <!--Waterfall Picture-->
+            <div class="row">
+                <img src="images/lq_portfolio/lq.waterfall.jones.matthew.jpg" onclick="openModal();currentSlide(5)" class="gallery_image" />
+            </div>
+
+            <!--Star Wars Picture-->
+            <div class="row">
+                <img src="images/lq_portfolio/lq.star.wars.jones.matthew.jpg" onclick="openModal();currentSlide(6)" class="gallery_image" alt="" />
+            </div>
+
+            <!--Umbrella Hat Picture-->
+            <div class="row">
+                <img src="images/lq_portfolio/lq.umbrella.hat.jones.matthew.jpg" onclick="openModal();currentSlide(7)" class="gallery_image" alt="" />
+            </div>
+
+        </div>
+
+        <!--Column 2-->
+        <div class="column">
+
+            <!--Bike Picture-->
+            <div class="row">
+                <img src="images/lq_portfolio/lq.bike.jones.matthew.jpg" onclick="openModal();currentSlide(8)" class="gallery_image" alt="" />
+            </div>
+
+            <!--Bowtie Man Picture-->
+            <div class="row">
+                <img src="images/lq_portfolio/lq.bowtie.jones.matthew.jpg" onclick="openModal();currentSlide(9)" class="gallery_image" alt="" />
+            </div>
+
+            <!--Bridge Picture-->
+            <div class="row">
+                <img src="images/lq_portfolio/lq.bridge.jones.matthew.jpg" onclick="openModal();currentSlide(10)" class="gallery_image" alt="" />
+            </div>
+
+            <!--Pointy Man Picture-->
+            <div class="row">
+                <img src="images/lq_portfolio/lq.pointy.man.jones.matthew.jpg" onclick="openModal();currentSlide(11)" class="gallery_image" alt="" />
+            </div>
+
+            <!--Cart Picture-->
+            <div class="row">
+                <img src="images/lq_portfolio/lq.shopping.cart.jones.matthew.jpg" onclick="openModal();currentSlide(12)" class="gallery_image" alt="" />
+            </div>
+
+           <!--Wheelchair Picture-->
+           <div class="row">
+               <img src="images/lq_portfolio/lq.wheelchair.jones.matthew.jpg" onclick="openModal();currentSlide(13)" class="gallery_image" alt="" />
+           </div>
+
+            <!--Woman Dog Picture-->
+            <div class="row">
+                <img src="images/lq_portfolio/lq.woman.dog.jones.matthew.jpg" onclick="openModal();currentSlide(14)" class="gallery_image" alt="" />
+            </div>
+
+        </div>
+
+    <!--Lightbox-->
+    <div id="lightbox" class="modal">
+
+        <!--Close Button-->
+        <span class="close" onclick="closeModal()">&times;</span>
+
+        <!--Lightbox Content-->
+        <div class="modal-content">
+
+            <!--Ansel Picture-->
+            <div class="lb_slides">
+                <!--Number Text-->
+                <div class="numbertext">1 / 14</div>
+                <!--Picture-->
+                <img src="images/hq_portfolio/ansel.jones.matthew.jpg" alt="" class="portfolio_image" />
+            </div>
+
+            <!--Road Picture-->
+            <div class="lb_slides">
+                <!--Number Text-->
+                <div class="numbertext">2 / 14</div>
+                <!--Picture-->
+                <img src="images/hq_portfolio/road.jones.matthew.jpg" alt="" class="portfolio_image" />
+            </div>
+
+            <!--Stairs Picture-->
+            <div class="lb_slides">
+                <!--Number Text-->
+                <div class="numbertext">3 / 14</div>
+                <!--Picture-->
+                <img src="images/hq_portfolio/stairs.jones.matthew.jpg" alt="" class="portfolio_image" />
+            </div>
+
+            <!--Stream Picture-->
+            <div class="lb_slides">
+                <!--Number Text-->
+                <div class="numbertext">4 / 14</div>
+                <!--Picture-->
+                <img src="images/hq_portfolio/stream.jones.matthew.jpg" alt="" class="portfolio_image" />
+            </div>
+
+            <!--Waterfall Picture-->
+            <div class="lb_slides">
+                <!--Number Text-->
+                <div class="numbertext">5 / 14</div>
+                <!--Picture-->
+                <img src="images/hq_portfolio/waterfall.jones.matthew.jpg" alt="" class="portfolio_image" />
+            </div>
+
+            <!--Star Wars Picture-->
+            <div class="lb_slides">
+                <!--Number Text-->
+                <div class="numbertext">6 / 14</div>
+                <!--Picture-->
+                <img src="images/hq_portfolio/star.wars.jones.matthew.jpg" alt="" class="portfolio_image" />
+            </div>
+
+            <!--Umbrella Hat Picture-->
+            <div class="lb_slides">
+                <!--Number Text-->
+                <div class="numbertext">7 / 14</div>
+                <!--Picture-->
+                <img src="images/hq_portfolio/umbrella.hat.jones.matthew.jpg" alt="" class="portfolio_image" />
+            </div>
+
+            <!--Bike Picture-->
+            <div class="lb_slides">
+                <!--Number Text-->
+                <div class="numbertext">8 / 14</div>
+                <!--Picture-->
+                <img src="images/hq_portfolio/bike.jones.matthew.jpg" alt="" class="portfolio_image" />
+            </div>
+
+            <!--Bowtie Picture-->
+            <div class="lb_slides">
+                <!--Number Text-->
+                <div class="numbertext">9 / 14</div>
+                <!--Picture-->
+                <img src="images/hq_portfolio/bowtie.jones.matthew.jpg" alt="" class="portfolio_image" />
+            </div>
+
+            <!--Bridge Picture-->
+            <div class="lb_slides">
+                <!--Number Text-->
+                <div class="numbertext">10 / 14</div>
+                <!--Picture-->
+                <img src="images/hq_portfolio/bridge.jones.matthew.jpg" alt="" class="portfolio_image" />
+            </div>
+
+            <!--Pointy Man Picture-->
+            <div class="lb_slides">
+                <!--Number Text-->
+                <div class="numbertext">11 / 14</div>
+                <!--Picture-->
+                <img src="images/hq_portfolio/pointy.man.jones.matthew.jpg" alt="" class="portfolio_image" />
+            </div>
+
+            <!--Cart Picture-->
+            <div class="lb_slides">
+                <!--Number Text-->
+                <div class="numbertext">12 / 14</div>
+                <!--Picture-->
+                <img src="images/hq_portfolio/shopping.cart.jones.matthew.jpg" alt="" class="portfolio_image" />
+            </div>
+
+            <!--Wheelchair Picture-->
+            <div class="lb_slides">
+                <!--Number Text-->
+                <div class="numbertext">13 / 14</div>
+                <!--Picture-->
+                <img src="images/hq_portfolio/wheelchair.jones.matthew.jpg" alt="" class="portfolio_image" />
+            </div>
+
+            <!--Woman Dog Picture-->
+            <div class="lb_slides">
+                <!--Number Text-->
+                <div class="numbertext">14 / 14</div>
+                <!--Picture-->
+                <img src="images/hq_portfolio/woman.dog.jones.matthew.jpg" alt="" class="portfolio_image" />
+            </div>
+
+            <!--Previous Button-->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+
+            <!--Next Button-->
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+
     </div>
-    <div class="row">
-        <img src="images/lq_portfolio/lq.umbrella.hat.jones.matthew.jpg" onclick="openModal();currentSlide(7)" class="gallery_image" alt="" />
-    </div>
+
 </div>
-<div class="column">
-    <div class="row">
-        <img src="images/lq_portfolio/lq.bike.jones.matthew.jpg" onclick="openModal();currentSlide(8)" class="gallery_image" alt="" />
-    </div>
-    <div class="row">
-        <img src="images/lq_portfolio/lq.bowtie.jones.matthew.jpg" onclick="openModal();currentSlide(9)" class="gallery_image" alt="" />
-    </div>
-    <div class="row">
-        <img src="images/lq_portfolio/lq.bridge.jones.matthew.jpg" onclick="openModal();currentSlide(10)" class="gallery_image" alt="" />
-    </div>
-    <div class="row">
-        <img src="images/lq_portfolio/lq.pointy.man.jones.matthew.jpg" onclick="openModal();currentSlide(11)" class="gallery_image" alt="" />
-    </div>
-    <div class="row">
-        <img src="images/lq_portfolio/lq.shopping.cart.jones.matthew.jpg" onclick="openModal();currentSlide(12)" class="gallery_image" alt="" />
-    </div>
-        <div class="row">
-        <img src="images/lq_portfolio/lq.wheelchair.jones.matthew.jpg" onclick="openModal();currentSlide(13)" class="gallery_image" alt="" />
-    </div>
-    <div class="row">
-        <img src="images/lq_portfolio/lq.woman.dog.jones.matthew.jpg" onclick="openModal();currentSlide(14)" class="gallery_image" alt="" />
-    </div>
-</div>
 
-
-<div id="lightbox" class="modal">
-  <span class="close cursor" onclick="closeModal()">&times;</span>
-  <div class="modal-content">
-
-    <div class="lb_slides">
-      <div class="numbertext">1 / 14</div>
-        <img src="images/hq_portfolio/ansel.jones.matthew.jpg" alt="" class="portfolio_image" />
-    </div>
-
-    <div class="lb_slides">
-      <div class="numbertext">2 / 14</div>
-        <img src="images/hq_portfolio/road.jones.matthew.jpg" alt="" class="portfolio_image" />
-    </div>
-
-    <div class="lb_slides">
-      <div class="numbertext">3 / 14</div>
-        <img src="images/hq_portfolio/stairs.jones.matthew.jpg" alt="" class="portfolio_image" />
-    </div>
-
-    <div class="lb_slides">
-      <div class="numbertext">4 / 14</div>
-        <img src="images/hq_portfolio/stream.jones.matthew.jpg" alt="" class="portfolio_image" />
-    </div>
-
-    <div class="lb_slides">
-      <div class="numbertext">5 / 14</div>
-        <img src="images/hq_portfolio/waterfall.jones.matthew.jpg" alt="" class="portfolio_image" />
-    </div>
-
-    <div class="lb_slides">
-      <div class="numbertext">6 / 14</div>
-        <img src="images/hq_portfolio/star.wars.jones.matthew.jpg" alt="" class="portfolio_image" />
-    </div>
-
-    <div class="lb_slides">
-      <div class="numbertext">7 / 14</div>
-        <img src="images/hq_portfolio/umbrella.hat.jones.matthew.jpg" alt="" class="portfolio_image" />
-    </div>
-
-    <div class="lb_slides">
-      <div class="numbertext">8 / 14</div>
-        <img src="images/hq_portfolio/bike.jones.matthew.jpg" alt="" class="portfolio_image" />
-    </div>
-
-    <div class="lb_slides">
-      <div class="numbertext">9 / 14</div>
-        <img src="images/hq_portfolio/bowtie.jones.matthew.jpg" alt="" class="portfolio_image" />
-    </div>
-
-    <div class="lb_slides">
-      <div class="numbertext">10 / 14</div>
-        <img src="images/hq_portfolio/bridge.jones.matthew.jpg" alt="" class="portfolio_image" />
-    </div>
-
-    <div class="lb_slides">
-      <div class="numbertext">11 / 14</div>
-        <img src="images/hq_portfolio/pointy.man.jones.matthew.jpg" alt="" class="portfolio_image" />
-    </div>
-
-    <div class="lb_slides">
-      <div class="numbertext">12 / 14</div>
-        <img src="images/hq_portfolio/shopping.cart.jones.matthew.jpg" alt="" class="portfolio_image" />
-    </div>
-
-    <div class="lb_slides">
-      <div class="numbertext">13 / 14</div>
-        <img src="images/hq_portfolio/wheelchair.jones.matthew.jpg" alt="" class="portfolio_image" />
-    </div>
-
-    <div class="lb_slides">
-      <div class="numbertext">14 / 14</div>
-        <img src="images/hq_portfolio/woman.dog.jones.matthew.jpg" alt="" class="portfolio_image" />
-    </div>
-
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-  </div>
-</div>
-</div>
     </main>
-
 
 <!--Copyright Footer-->
 <footer>
