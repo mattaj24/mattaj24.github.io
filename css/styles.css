@@ -177,6 +177,10 @@ body {
         margin: 15px 15px 0px 15px;
     }
 
+    .section_body:last-child{
+        margin-bottom: 15px;
+    }
+
         /*About Section*/
         #about_box{
             margin-left: 10px;
