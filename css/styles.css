@@ -138,6 +138,16 @@ body {
             color: rgba(200, 200, 200, 1);
         }
 
+/*Main Container*/
+main{
+    display: flex;
+    justify-content: center;
+}
+
+.main_content{
+    max-width: 1500px;
+}
+
 /*Section Containers*/
 .section_container {
     display: flex;
