@@ -14,8 +14,15 @@ h1, h2, h3, h4, h5, h6{
 
 /*Background Image*/
 .headercontainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     height: 20vh;
     min-height: 300px;
@@ -29,22 +36,34 @@ h1, h2, h3, h4, h5, h6{
 
 /*Nav Container*/
 .navcontainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
     height: 90%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
 }
 
     /*Navigation Circle with Logo*/
    .navcircle {
+       display: -webkit-box;
+       display: -ms-flexbox;
        display: flex;
+       -webkit-box-pack: center;
+       -ms-flex-pack: center;
        justify-content: center;
+       -webkit-box-align: center;
+       -ms-flex-align: center;
        align-items: center;
        background-color: rgba(255, 255, 255, 1);
        width: 215px;
        height: 215px;
        border-radius: 100%;
+       -webkit-transition: background-color 0.5s, width 1s, height 1s;
        transition: background-color 0.5s, width 1s, height 1s;
     }
 
@@ -55,13 +74,21 @@ h1, h2, h3, h4, h5, h6{
     /*Signature*/
     .sig{
         width: 200px;
+        -webkit-transition: width 1s;
         transition: width 1s;
     }
 
     /*Nav List*/
     .navlist {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
         flex-direction: row;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
         width: 60%;
         list-style-type: none;
@@ -73,11 +100,15 @@ h1, h2, h3, h4, h5, h6{
 
     /*Nav Dividers*/
     .navdivider {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
 
     /*Nav Items*/
     .navitem{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         padding: 0px 5px;
     }
@@ -90,6 +121,7 @@ h1, h2, h3, h4, h5, h6{
         text-decoration: none;
         color: white;
         font-size: auto;
+        -webkit-transition: background-color 0.25s, font-size 1s;
         transition: background-color 0.25s, font-size 1s;
     }
 
@@ -99,7 +131,11 @@ h1, h2, h3, h4, h5, h6{
 
     /*Photo Cred*/
         #photocredtext{
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
+            -webkit-box-pack: end;
+            -ms-flex-pack: end;
             justify-content: flex-end;
             margin-right: 15px;
             color: white;
@@ -112,6 +148,7 @@ h1, h2, h3, h4, h5, h6{
             color: inherit;
             font-family: inherit;
             font-size: inherit;
+            -webkit-transition: color 0.25s;
             transition: color 0.25s;
         }
 
@@ -121,13 +158,21 @@ h1, h2, h3, h4, h5, h6{
 
 /*Page Title Container*/
 .page_title_container{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
     /*Page Title Lines*/
     .page_title_line{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         height: 10px;
         width: 35%;
@@ -136,7 +181,11 @@ h1, h2, h3, h4, h5, h6{
 
     /*Page Title Item*/
     .page_title{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         color: white;
         font-family: 'Roboto Slab', sans-seif;
@@ -150,13 +199,19 @@ h1, h2, h3, h4, h5, h6{
 
     /*Entire Footer*/
     footer {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         padding-bottom: 10px;
     }
 
     /*Copyright Text*/
     .copyright {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         margin: 0px;
         font-family: 'Roboto', sans-serif;
@@ -167,17 +222,30 @@ h1, h2, h3, h4, h5, h6{
 
     /*Main Container*/
     .contact_main{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         margin-bottom: 20px;
+        -ms-flex-pack: distribute;
         justify-content: space-around;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
     }
 
         /*Social Links Container*/
         .contact_social_container{
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
             flex-direction: column;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
             align-items: center;
             width: 45%;
             height: 625px;
@@ -198,7 +266,11 @@ h1, h2, h3, h4, h5, h6{
 
             /*Social Links*/
             .social_link{
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
                 align-items: center;
                 width: 87%;
                 height: 40px;
@@ -209,6 +281,7 @@ h1, h2, h3, h4, h5, h6{
                 border-radius: 5px;
                 text-decoration: none;
                 margin-bottom: 10px;
+                -webkit-transition: height 0.25s;
                 transition: height 0.25s;
             }
 
@@ -252,7 +325,11 @@ h1, h2, h3, h4, h5, h6{
 
                 /*Snapcode Link/Container*/
                 .snapcode_link{
+                    display: -webkit-box;
+                    display: -ms-flexbox;
                     display: flex;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
                     justify-content: center;
                     width: 60%;
                     min-width: 225px;
@@ -269,8 +346,15 @@ h1, h2, h3, h4, h5, h6{
 
         /*Contact Form Container*/
         .contact_message_container{
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
             flex-direction: column;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
             align-items: center;
             width: 45%;
             min-width: 325px;
@@ -289,8 +373,15 @@ h1, h2, h3, h4, h5, h6{
 
             /*Contact Form*/
             #contact_form{
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
                 align-items: center;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
                 flex-direction: column;
                 width: 100%;
             }
@@ -342,14 +433,24 @@ h1, h2, h3, h4, h5, h6{
 
 /*Gallery Container (contains columns)*/
 .gallery_container{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
     /*Gallery Columns (contains rows)*/
     .column {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         width: 45%;
         min-width: 300px;
@@ -358,6 +459,8 @@ h1, h2, h3, h4, h5, h6{
 
     /*Gallery Rows (contains gallery images)*/
     .row{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         width: 100%;
     }
@@ -430,8 +533,11 @@ h1, h2, h3, h4, h5, h6{
     color: white;
     font-weight: bold;
     font-size: 20px;
+    -webkit-transition: 0.25s ease;
     transition: 0.25s ease;
     border-radius: 0px 3px 3px 0px;
+    -moz-user-select: none;
+    -ms-user-select: none;
     user-select: none;
     -webkit-user-select: none;
 }
@@ -463,13 +569,23 @@ h1, h2, h3, h4, h5, h6{
     @media only screen and (max-width: 600px) {
 
         .navcontainer{
+            -ms-flex-line-pack: center;
             align-content: center;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
             flex-direction: column;
         }
 
         .navcircle {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
             justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
             align-items: center;
             width: 175px;
             height: 175px;
@@ -483,22 +599,32 @@ h1, h2, h3, h4, h5, h6{
 
         /*Reordering Nav List Items*/
             #portfolio_nav{
+                -webkit-box-ordinal-group: 2;
+                -ms-flex-order: 1;
                 order: 1;
             }
 
             #home_nav {
+                -webkit-box-ordinal-group: 4;
+                -ms-flex-order: 3;
                 order: 3;
             }
 
             #contact_nav{
+                -webkit-box-ordinal-group: 6;
+                -ms-flex-order: 5;
                 order: 5;
             }
 
             #navdiv1{
+                -webkit-box-ordinal-group: 3;
+                -ms-flex-order: 2;
                 order: 2;
             }
 
             #navdiv2{
+                -webkit-box-ordinal-group: 5;
+                -ms-flex-order: 4;
                 order: 4;
             }
 }
@@ -506,6 +632,8 @@ h1, h2, h3, h4, h5, h6{
     /*Fixes Off-Centering for Navigation at Small Screen Sizes*/
     @media only screen and (max-width: 600px) {
         .navlist {
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
             justify-content: center;
             }
 
