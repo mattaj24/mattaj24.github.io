@@ -197,9 +197,10 @@ main{
     justify-content: center;
 }
 
-.main_content{
-    max-width: 1500px;
-}
+    /*Used to center main content with max-width for easy readability*/
+    .main_content{
+        max-width: 1500px;
+    }
 
 /*Section Containers*/
 .section_container {
