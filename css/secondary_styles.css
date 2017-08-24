@@ -428,7 +428,7 @@ h1, h2, h3, h4, h5, h6{
                     border-radius: 3px;
                     color: white;
                     height: 30px;
-                    margin: 15px 0px;
+                    margin: 15px 0px 5px;
                     min-width: 100px;
                     width: 25%;
                     border: none;
@@ -437,6 +437,16 @@ h1, h2, h3, h4, h5, h6{
                 #contact_form_submit_button:active{
                     background-color: rgba(90, 90, 90, 1);
                     border: 1px inset grey;
+                }
+
+                /*Notice*/
+                #contact_form_notice{
+                    color: white;
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 10px;
+                    margin: 5px 0px 10px 0px;
+                    padding: 0px 15px;
+                    text-align: center;
                 }
 
 /*Portfolio Page- Some Code Adapted from w3Schools Lightbox Lesson*/
