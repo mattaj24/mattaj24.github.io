@@ -496,12 +496,9 @@ h1, h2, h3, h4, h5, h6{
 .modal {
     display: none;
     position: fixed;
-    z-index: 1;
-    padding-top: 100px;
-    left: 0;
     top: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     overflow: auto;
     background-color: black;
 }
@@ -511,19 +508,23 @@ h1, h2, h3, h4, h5, h6{
         position: relative;
         background-color: black;
         margin: auto;
-        width: 90%;
-        max-width: 1200px;
+        max-height: 100vh;
+        max-width: 90vw;
 }
 
         /*Lightbox Slide Container*/
         .lb_slides {
             display: none;
             background-color: black;
+            max-height: 100vh;
         }
 
         /*Lightbox Images*/
         .portfolio_image{
-            width: 100%;
+            margin: auto;
+            align-self: center;
+            max-height: 90vh;
+            max-width: 90vw;
         }
 
 /*Close Button*/
