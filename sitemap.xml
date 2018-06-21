@@ -1,24 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="/css/sitemap_styles.css"?>
 <urlset
       xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
+
 <url>
-  <loc>https://mattaj24.github.io/</loc>
-  <changefreq>monthly</changefreq>
+  <loc>https://mattajones.com/</loc>
+  <lastmod>2018-05-11T01:06:18+00:00</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://mattaj24.github.io/index.html</loc>
-  <changefreq>monthly</changefreq>
+  <loc>https://mattajones.com/portfolio.html</loc>
+  <lastmod>2018-05-11T01:06:18+00:00</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://mattaj24.github.io/portfolio.html</loc>
-  <changefreq>monthly</changefreq>
+  <loc>https://mattajones.com/contact.html</loc>
+  <lastmod>2018-05-11T01:06:18+00:00</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://mattaj24.github.io/contact.html</loc>
-  <changefreq>monthly</changefreq>
+  <loc>https://mattajones.com/privacy.html</loc>
+  <lastmod>2018-05-11T01:06:18+00:00</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.80</priority>
 </url>
+
+
 </urlset>
