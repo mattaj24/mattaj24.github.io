@@ -65,8 +65,8 @@ body {
         background-color: rgba(240, 240, 240, 1);
     }
 
-    /*Signature*/
-    .sig{
+    /*Logo*/
+    .logo{
         width: 100%;
         -webkit-transition: width 1s;
         transition: width 1s;
@@ -345,7 +345,7 @@ main{
             margin-left: 0px;
         }
 
-        .sig {
+        .logo {
             width: 225px;
         }
 

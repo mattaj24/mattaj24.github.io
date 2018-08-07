@@ -71,8 +71,8 @@ h1, h2, h3, h4, h5, h6{
         background-color: rgba(240, 240, 240, 1);
     }
 
-    /*Signature*/
-    .sig{
+    /*Logo*/
+    .logo{
         width: 200px;
         -webkit-transition: width 1s;
         transition: width 1s;
@@ -614,7 +614,7 @@ h1, h2, h3, h4, h5, h6{
             margin-left: 0px;
         }
 
-        .sig {
+        .logo {
             width: 150px;
         }
 
